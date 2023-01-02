@@ -98,3 +98,49 @@ vec[vec!=40]
 vec[vec>20 & vec<30]
 
 
+m <- matrix(1:20, nrow=4, ncol=5) # arr[4][5]
+m
+
+# recycling
+# matrix 크기보다 입력갯수가 작으면 첫번째 값 부터 다시 recycling
+
+mm <- matrix(1:20, nrow=4, ncol=5, byrow = T) # 가로
+mm
+
+
+
+x <- 1:4
+y <- 5:8
+cbind(x, y) # column-bind
+rbind(x, y) # row-bind
+
+
+
+(mt <- matrix(1:20, ncol = 5))
+mt[2, 3]
+mt[3,]
+mt[3, 4]
+mt[,2]
+
+mt[,c(2, 4)]
+
+mt[c(2,3), c(2, 4, 5)]
+
+
+
+(mtx <- matrix(1:20, ncol = 2))
+rownames(mtx) <- c("row1", "row2")
+colnames(mtx) <- c("col1", "col2")
+
+mtx
+
+
+alpha <- c('A', 'B', 'C')
+number <- c(1, 2, 3)
+df <- data.frame(alpha, number)
+df
+str(df)
+
+
+head(iris)
+str(iris)
