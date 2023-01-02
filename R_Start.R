@@ -144,3 +144,5 @@ str(df)
 
 head(iris)
 str(iris)
+sd(iris$Sepal.Length)
+iris[iris$Sepal.Length< 5,]
